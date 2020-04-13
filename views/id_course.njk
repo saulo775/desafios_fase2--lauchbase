@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+
+  {% block content %}
+
+  <header class="about_header">
+    <div>
+      <a href="/courses">VOLTAR</a>
+    </div>
+  </header>
+
+    <div> 
+      <iframe src="https://rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
+    </div>
+
+    {# <script src="scripts.js"></script> #}
+
+  {% endblock %}

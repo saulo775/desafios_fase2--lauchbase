@@ -1,0 +1,248 @@
+/*===ZERANDO ESTILOS DA PAGINA===*/
+/*===ZERANDO ESTILOS DA PAGINA===*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*===ESTILIZANDO A PAGINA FAVICON===*/
+/*===ESTILIZANDO A PAGINA FAVICON===*/
+
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2014/06/24/17/38/non-376543_1280.jpg);
+  background-repeat: no-repeat;
+  /* background-color: white; */
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+.favicon_header{
+  background-color: rgba(0, 0, 0, 0.411);
+  font-size: 35px;
+  /* border-bottom: 2px solid gold; */
+  max-width: 100%;
+  height: 6%;
+  padding: 30px;
+
+}
+.favicon_header div{
+  text-align: center;
+}
+
+.favicon_header a{
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 40px;
+  padding: 0 15px 0 15px;
+  
+}
+.favicon_header a:hover{
+  color: rgb(248, 220, 62);
+  transition: 700ms;
+}
+
+/*===ESTILIZANDO A PAGINA SOBRE===*/
+/*===ESTILIZANDO A PAGINA SOBRE===*/
+
+
+.about_header{
+  background-color: rgba(0, 0, 0, 0.411);
+  /* border-bottom: 2px solid gold; */
+  max-width: 100%;
+  height: 2%;
+  padding: 20px;
+}
+.about_header a{
+  text-decoration: none;
+  color: rgb(221, 239, 255);
+}
+
+.conteiner{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+.logo{
+  margin: 15px auto;
+}
+.logo img{
+  border: 3px solid gold;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+}
+.textos{
+  margin: 15px auto 25px 25px
+}
+.textos h1{
+  font-size: 45px;
+  font-weight: bold;
+  color: gold;
+  padding-bottom: 10px;
+}
+.textos p{
+  font-size: 20px;
+  max-width: 70%;
+  color: aliceblue;
+  padding-bottom: 10px;
+}
+.textos h2{
+  font-size: 30px;
+  color: rgb(153, 25, 238);
+  padding-bottom: 10px;
+}
+.textos ul{
+  padding-left: 30px;
+}
+.textos li{
+  font-size: 20px;
+  color: rgb(244, 250, 255);
+}
+.social_media{
+  text-align: center;
+}
+.social_media a{
+  text-decoration: none;
+  font-size: 25px;
+  margin: 20px 80px;
+  padding: 10px 10px;
+  color: aliceblue;
+  border-radius: 5px;
+
+}
+.social_media a:hover{
+  color: rgb(94, 255, 53);
+  transition: 700ms;
+  background-color: rgb(29, 27, 27);
+}
+/*===ESTILIZANDO A PAGINA SOBRE===*/
+/*===ESTILIZANDO A PAGINA SOBRE===*/
+
+.about_header div h1{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 233, 110);
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 85%;
+  max-height: 90%;
+  margin: 30px auto 0;
+  text-align: center;
+}
+.card{
+  border-radius: 15px;
+  background-color: rgba(53, 53, 56, 0.288);
+  display: grid;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.card img{
+  padding: 100px 40px ;
+  margin: 0 auto;
+}
+.card p{
+  color: aliceblue;
+  max-width: 350px;
+  margin: 0 auto 18vh;
+  font-size: 20px;
+}
+
+.card h2{
+  font-size: 18px;
+  color: gold;
+  visibility: visible;
+  opacity: 0.5;
+  text-align: right;
+  padding: 5px;
+}
+.card h1{
+  padding-bottom: 30px;
+  color: azure;
+}
+.start:hover{
+  border: rgb(153, 25, 238) solid 3px;
+  transition: 300ms;
+}
+.launch:hover{
+  border: rgb(230, 176, 27) solid 3px;
+  transition: 300ms;
+}
+.go:hover{
+  border: rgb(44, 243, 26) solid 3px;
+  transition: 300ms;
+}
+
+
+/*===ESTILIZANDO O MODAL===*/
+/*===ESTILIZANDO O MODAL===*/
+
+.modal_overlay{
+  background-color: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal{
+  background-color: whitesmoke;
+  width: 80%;
+  height: 80%;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+}
+
+.modal.maximize{
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+
+}
+
+.close_modal{
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+.maximize_modal{
+  position: absolute;
+  top: 12px;
+  right: 42px;
+  cursor: pointer;
+}
+
+.modal_overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* .modal_content{
+  position: relative;
+  width: 100%;
+  height: %;
+} */
+iframe{
+  position: relative;
+  width: 100vw;
+  height: 92.1vh;,
+  
+}
+
+.error{
+  font-size: 120px;
+  text-align: center;
+}
